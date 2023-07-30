@@ -1,0 +1,25 @@
+===================================Triggers===================================
+
+1) Barra Accesa (Only for debugging)
+	fired when CH0&CH1 are ove threshold for one bar for any bar.
+
+2) Cube On
+	Cube is read out by 3 SIPM (6x6, 2:1x1 (2 SIPM, one channel) and 2:3x3(one channel)). 3 channels in total. multiple SIPMs for redundancy. A cube is on  when al least 2/3 channels are over threshold.
+
+3) ACS on (Mu vert pass)
+	ACS has 2 SIPMs on different channels. Triggered when both channels are over threshold. Valid for any ACS.
+
+4) CALOg On 
+	Or for all the cubes.
+
+5) PST On
+	At least one bar of the first layer AND at least one bar of the second layer.
+
+6) Vertican Muons
+	The central bar of the first 3 layers.
+
+7) MIP pass no FTK
+	PST on AND CALOg on AND bottom ACS
+
+8) MIP pass no ACS no FTK
+	Exactly the last one but without the bottom ACS.
